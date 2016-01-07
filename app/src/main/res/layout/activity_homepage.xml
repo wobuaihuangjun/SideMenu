@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huangzj.side.SideMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sidemenu="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_side_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    sidemenu:leftPadding="145dp"
+    sidemenu:rightPadding="145dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/homepage_left_menu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/babyinfo_center_fragment"
+                android:name="com.huangzj.side.LeftFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <com.huangzj.side.TouchView
+            android:id="@+id/homepage_middle_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/content_alph_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0"
+                android:background="#222222" />
+
+        </com.huangzj.side.TouchView>
+
+        <RelativeLayout
+            android:id="@+id/homepage_right_menu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/more_function_fragment"
+                android:name="com.huangzj.side.RightFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.huangzj.side.SideMenu>
