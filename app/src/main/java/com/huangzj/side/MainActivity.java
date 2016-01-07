@@ -1,30 +1,46 @@
 package com.huangzj.side;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
+import android.view.View;
 
+import com.huangzj.side.example.FirstActivity;
+import com.huangzj.side.example.FourActivity;
+import com.huangzj.side.example.SecondActivity;
+import com.huangzj.side.example.ThirdActivity;
+import com.huangzj.side.myslidmenu.CustomSlidActivity;
+
+/**
+ * Created by huangzj on 2016/1/7.
+ */
 public class MainActivity extends Activity {
-
-    SideMenu sideMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_homepage);
 
-        sideMenu = (SideMenu) findViewById(R.id.home_side_menu);
+        setContentView(R.layout.activity_main);
     }
 
-    @Override
-    public void onBackPressed() {
-        if (sideMenu.isLeftMenuOpen()) {
-            Toast.makeText(this, "左侧菜单已经打开", Toast.LENGTH_LONG).show();
-        } else if (sideMenu.isRightMenuOpen()) {
-            Toast.makeText(this, "右侧菜单已经打开", Toast.LENGTH_LONG).show();
-        } else {
-            super.onBackPressed();
-        }
-        sideMenu.closeMenu();
+    public void onClick(View v) {
+        startActivity(new Intent(this, CustomSlidActivity.class));
     }
+
+    public void way1(View view) {
+        startActivity(new Intent(this, FirstActivity.class));
+    }
+
+    public void way2(View view) {
+        startActivity(new Intent(this, SecondActivity.class));
+    }
+
+    public void way3(View view) {
+        startActivity(new Intent(this, ThirdActivity.class));
+    }
+
+    public void way4(View view) {
+        startActivity(new Intent(this, FourActivity.class));
+    }
+
 }

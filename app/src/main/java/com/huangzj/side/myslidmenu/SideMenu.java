@@ -1,4 +1,4 @@
-package com.huangzj.side;
+package com.huangzj.side.myslidmenu;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -13,6 +13,9 @@ import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
+
+import com.huangzj.side.R;
+import com.huangzj.side.util.ScreenUtil;
 
 
 public class SideMenu extends HorizontalScrollView {

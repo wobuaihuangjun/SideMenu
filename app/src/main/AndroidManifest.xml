@@ -15,6 +15,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".myslidmenu.CustomSlidActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".example.FirstActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".example.SecondActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".example.ThirdActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".example.FourActivity"
+            android:launchMode="singleTask" />
+
     </application>
 
 </manifest>

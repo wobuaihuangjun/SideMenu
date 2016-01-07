@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.huangzj.side.SideMenu xmlns:android="http://schemas.android.com/apk/res/android"
+<com.huangzj.side.myslidmenu.SideMenu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:sidemenu="http://schemas.android.com/apk/res-auto"
     android:id="@+id/home_side_menu"
     android:layout_width="wrap_content"
@@ -21,12 +21,12 @@
 
             <fragment
                 android:id="@+id/babyinfo_center_fragment"
-                android:name="com.huangzj.side.LeftFragment"
+                android:name="com.huangzj.side.myslidmenu.LeftFragment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </RelativeLayout>
 
-        <com.huangzj.side.TouchView
+        <com.huangzj.side.myslidmenu.TouchView
             android:id="@+id/homepage_middle_content_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -46,7 +46,7 @@
                 android:alpha="0"
                 android:background="#222222" />
 
-        </com.huangzj.side.TouchView>
+        </com.huangzj.side.myslidmenu.TouchView>
 
         <RelativeLayout
             android:id="@+id/homepage_right_menu_layout"
@@ -55,9 +55,9 @@
 
             <fragment
                 android:id="@+id/more_function_fragment"
-                android:name="com.huangzj.side.RightFragment"
+                android:name="com.huangzj.side.myslidmenu.RightFragment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </RelativeLayout>
     </LinearLayout>
-</com.huangzj.side.SideMenu>
+</com.huangzj.side.myslidmenu.SideMenu>

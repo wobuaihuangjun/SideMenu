@@ -1,4 +1,4 @@
-package com.huangzj.side;
+package com.huangzj.side.myslidmenu;
 
 import android.content.Context;
 import android.util.AttributeSet;
